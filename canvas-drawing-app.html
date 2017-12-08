@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+		<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+		<link href="canvas-drawing-app.css" rel="stylesheet" type="text/css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" defer></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" defer></script>
+		<script type="text/javascript" src="canvas-drawing-app.js" defer></script>
+	</head>
+	<body>
+	  <div id="chosen-shape" style="display: none">paintbrush</div>
+	  <div>
+			<div id="menu">
+				<div id="reset">Reset</div>
+					<label for="color-slider">Color</label>
+				<br/>
+				<br/>
+					<div id="color-slider"></div>
+				<br/>
+				<br/>
+					<div id="color"></div>
+				<br/>
+				<br/>
+					<label id="size" for="thickness-slider">Size</label>
+				<br/>
+				<br/>
+					<div id="thickness-slider"></div>
+				<br/>
+				<br/>
+					<label for="shapes">Shapes</label>
+					<div id="shapes"></div>
+				<br/>
+				<div id="shapes">
+					<div id="paintbrush" class="shape main"><img src="paintbrush.png"></img></div>
+					<div id="eraser" class="shape main"><img src="eraser.png"></img></div><br>
+					<div id="square" class="shape"><img src="square.png"></img></div>
+					<div id="triangle" class="shape"><img src="triangle.png"></img></div>
+					<div id="circle" class="shape row1"><img src="circle.png"></img></div>
+				</div><br/>
+			</div>
+			
+			<canvas id="canvas">Canvas Not Supported</canvas>
+   	</div>
+	</body>
+</html>
